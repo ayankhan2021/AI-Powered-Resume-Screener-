@@ -1,0 +1,79 @@
+{
+  "7d48c3709f35933963a79d9b2cd888ac735fa96def01b07ae34f9ded9571c9a0": {
+    "user_data": {
+      "username": "ayan",
+      "role": "hr_manager",
+      "full_name": "Ayan Khan",
+      "email": "ak123782651@gmail.com",
+      "last_login": "2025-07-18T12:13:22.687722"
+    },
+    "created_at": "2025-07-18T12:13:22.689848",
+    "expires_at": "2025-07-18T20:13:22.689855"
+  },
+  "8e1d9af842b0799babc204ac697243d5575ec7f448c17aeab54f88ed46ae8e4b": {
+    "user_data": {
+      "username": "admin",
+      "role": "admin",
+      "full_name": "FCG Administrator",
+      "email": "admin@fourcornersgroup.com",
+      "last_login": "2025-07-18T12:17:20.302367"
+    },
+    "created_at": "2025-07-18T12:17:20.304065",
+    "expires_at": "2025-07-18T20:17:20.304072"
+  },
+  "bd1e02edd12dfc51948900b3cbfd7cb4ca5664a6960cd084ec10c57453f1f98a": {
+    "user_data": {
+      "username": "admin",
+      "role": "admin",
+      "full_name": "FCG Administrator",
+      "email": "admin@fourcornersgroup.com",
+      "last_login": "2025-07-18T12:18:27.230780"
+    },
+    "created_at": "2025-07-18T12:18:27.232420",
+    "expires_at": "2025-07-18T20:18:27.232425"
+  },
+  "b4c16147d70aa7ed3862f6cea1d1e5c24748a9043d9b4e91cfe1580f0ac16c24": {
+    "user_data": {
+      "username": "admin",
+      "role": "admin",
+      "full_name": "FCG Administrator",
+      "email": "admin@fourcornersgroup.com",
+      "last_login": "2025-07-18T12:19:09.870810"
+    },
+    "created_at": "2025-07-18T12:19:09.873099",
+    "expires_at": "2025-07-18T20:19:09.873107"
+  },
+  "96d23e65f00c61915441831123b2bf157f12d03cd33e3e2637eb6d2e331d2575": {
+    "user_data": {
+      "username": "admin",
+      "role": "admin",
+      "full_name": "FCG Administrator",
+      "email": "admin@fourcornersgroup.com",
+      "last_login": "2025-07-18T12:33:28.912983"
+    },
+    "created_at": "2025-07-18T12:33:28.915239",
+    "expires_at": "2025-07-18T20:33:28.915243"
+  },
+  "c50ad9c5449631756114fbdd7ab08fb07102f36a01a6e7f34d76c678ad381f82": {
+    "user_data": {
+      "username": "admin",
+      "role": "admin",
+      "full_name": "FCG Administrator",
+      "email": "admin@fourcornersgroup.com",
+      "last_login": "2025-07-18T12:36:50.093535"
+    },
+    "created_at": "2025-07-18T12:36:50.095260",
+    "expires_at": "2025-07-18T20:36:50.095287"
+  },
+  "7b52000a758a04f118009d1157f8363b3d731c9a2d36ab66900f64de112ab3d6": {
+    "user_data": {
+      "username": "admin",
+      "role": "admin",
+      "full_name": "FCG Administrator",
+      "email": "admin@fourcornersgroup.com",
+      "last_login": "2025-07-18T12:56:56.400927"
+    },
+    "created_at": "2025-07-18T12:56:56.402557",
+    "expires_at": "2025-07-18T20:56:56.402565"
+  }
+}

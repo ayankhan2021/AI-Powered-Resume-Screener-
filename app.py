@@ -1,18 +1,26 @@
 import streamlit as st
 import pandas as pd
 import json
+import time
 from components.text_extractor import TextExtractor
 from components.ai_analyzer import JobMatchingAIAnalyzer
 from components.visualizer import Visualizer
+from components.auth import AuthManager
+from components.login import LoginPage
+from components.branding import FCGBranding
 from utils.helpers import SessionManager, FileValidator, ConfigManager, format_score_color
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Resume Screener",
-    page_icon="📄",
+    page_title="FCG Resume Screener",
+    page_icon="🏢",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# Initialize authentication and login components
+auth_manager = AuthManager()
+login_page = LoginPage()
 
 # Initialize session state
 SessionManager.init_session_state()
@@ -30,18 +38,79 @@ def init_components():
         'visualizer': Visualizer()
     }
 
-components = init_components()
+def check_authentication():
+    """Check if user is authenticated"""
+    if not st.session_state.get('authenticated', False):
+        return False
+    
+    session_id = st.session_state.get('session_id')
+    if not session_id:
+        return False
+    
+    user_data = auth_manager.validate_session(session_id)
+    if not user_data:
+        # Session expired
+        st.session_state['authenticated'] = False
+        return False
+    
+    # Update user data in session state
+    st.session_state['user_data'] = user_data
+    return True
 
 def main():
     """Main application function"""
     
-    # Header
-    st.title("AI-Powered FCG Resume Screener")
+    # Check authentication
+    if not check_authentication():
+        # Show login page
+        login_page.show_login_page()
+        return
+    
+    # User is authenticated, show main application
+    show_main_application()
+
+def show_main_application():
+    """Show the main application interface"""
+    
+    # Initialize components
+    components = init_components()
+    
+    # Inject FCG branding
+    FCGBranding.inject_fcg_css()
+    
+    # Header with user info
+    col1, col2 = st.columns([3, 1])
+    
+    with col1:
+        FCGBranding.show_fcg_header()
+    
+    with col2:
+        # User info and logout
+        user_data = st.session_state.get('user_data', {})
+        
+        st.markdown(f"""
+        <div style="text-align: right; padding: 1rem;">
+            <p><strong>{user_data.get('full_name', 'User')}</strong></p>
+            <p style="font-size: 0.8rem; color: #666;">{user_data.get('role', '').replace('_', ' ').title()}</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        if st.button("🚪 Logout", use_container_width=True):
+            login_page.logout()
+    
+    # Welcome message
+    FCGBranding.show_welcome_message(user_data)
+    
     st.markdown("---")
     
     # Sidebar
     with st.sidebar:
         st.header("📋 Configuration")
+        
+        # User management for admins
+        if user_data.get('role') == 'admin':
+            with st.expander("👥 User Management"):
+                login_page.show_user_management()
         
         # Job description input
         job_description = st.text_area(
@@ -62,14 +131,16 @@ def main():
                 with st.expander(f"{history_item['filename']} - Score: {history_item['analysis']['overall_score']:.1f}"):
                     st.write(f"**Timestamp:** {history_item['timestamp']}")
                     st.write(f"**Skills Found:** {history_item['analysis']['total_skills_count']}")
+                    st.write(f"**Analyzed by:** {user_data.get('full_name', 'Unknown')}")
     
     # Main content
     if batch_mode:
-        handle_batch_processing()
+        handle_batch_processing(components)
     else:
-        handle_single_file_processing()
+        handle_single_file_processing(components)
 
-def handle_single_file_processing():
+
+def handle_single_file_processing(components):
     """Handle single file processing"""
     st.header("📄 Single Resume Analysis")
     
@@ -90,9 +161,11 @@ def handle_single_file_processing():
         
         # Process file
         with st.spinner("🔍 Analyzing resume..."):
-            process_single_file(uploaded_file)
+            FCGBranding.show_fcg_loader("Analyzing resume content...")
+            time.sleep(1)  # Simulate processing time
+            process_single_file(uploaded_file, components)
 
-def handle_batch_processing():
+def handle_batch_processing(components):
     """Handle batch processing of multiple files"""
     st.header("📚 Batch Resume Analysis")
     
@@ -117,7 +190,7 @@ def handle_batch_processing():
             
             if is_valid:
                 with st.spinner(f"Processing {file.name}..."):
-                    result = process_file_for_batch(file)
+                    result = process_file_for_batch(file, components)
                     if result:
                         results.append(result)
             else:
@@ -127,9 +200,9 @@ def handle_batch_processing():
         
         # Display batch results
         if results:
-            display_batch_results(results)
+            display_batch_results(results, components)
 
-def process_single_file(uploaded_file):
+def process_single_file(uploaded_file, components):
     """Process a single resume file"""
     # Extract text
     text = components['extractor'].extract_text(uploaded_file)
@@ -142,14 +215,17 @@ def process_single_file(uploaded_file):
     analysis_result = components['analyzer'].calculate_resume_score(
         text, 
         st.session_state.current_job_description,
-        "Market Research Analyst"  # You can make this dynamic
+        "Market Research Analyst"
     )
+    
+    # Add analyst info to analysis result
+    analysis_result['analyzed_by'] = st.session_state.get('user_data', {}).get('full_name', 'Unknown')
     
     SessionManager.add_analysis_to_history(analysis_result, uploaded_file.name)
     
-    display_single_analysis_results(analysis_result, uploaded_file.name)
+    display_single_analysis_results(analysis_result, uploaded_file.name, components)
 
-def process_file_for_batch(uploaded_file):
+def process_file_for_batch(uploaded_file, components):
     """Process file for batch analysis"""
     text = components['extractor'].extract_text(uploaded_file)
     
@@ -166,7 +242,7 @@ def process_file_for_batch(uploaded_file):
         'analysis': analysis_result
     }
 
-def display_single_analysis_results(analysis_result, filename):
+def display_single_analysis_results(analysis_result, filename, components):
     """Display results for single file analysis"""
     st.success(f"✅ Analysis completed for {filename}")
     
@@ -253,7 +329,9 @@ def display_single_analysis_results(analysis_result, filename):
     download_data = {
         'filename': filename,
         'analysis_result': analysis_result,
-        'recommendations': recommendations
+        'recommendations': recommendations,
+        'analyzed_by': st.session_state.get('user_data', {}).get('full_name', 'Unknown'),
+        'timestamp': pd.Timestamp.now().isoformat()
     }
     
     st.download_button(
@@ -263,7 +341,7 @@ def display_single_analysis_results(analysis_result, filename):
         mime="application/json"
     )
 
-def display_batch_results(results):
+def display_batch_results(results, components):
     """Display results for batch processing"""
     st.success(f"✅ Batch analysis completed for {len(results)} files")
     
