@@ -1,0 +1,116 @@
+{
+  "programming_languages": [
+    "python", "java", "javascript", "c++", "c#", "php", "ruby", "swift", 
+    "kotlin", "scala", "go", "rust", "typescript", "r", "matlab", "perl",
+    "sas", "spss", "stata", "vba", "sql"
+  ],
+  "web_technologies": [
+    "html", "css", "react", "angular", "vue.js", "node.js", "express.js",
+    "django", "flask", "spring", "laravel", "bootstrap", "jquery", "sass",
+    "wordpress", "drupal", "joomla", "shopify", "magento"
+  ],
+  "databases": [
+    "mysql", "postgresql", "mongodb", "sqlite", "redis", "oracle", 
+    "cassandra", "elasticsearch", "dynamodb", "firebase", "ms sql server",
+    "access", "teradata", "snowflake", "bigquery"
+  ],
+  "cloud_platforms": [
+    "aws", "azure", "google cloud", "heroku", "digitalocean", "kubernetes",
+    "docker", "terraform", "jenkins", "gitlab ci", "github actions",
+    "vercel", "netlify", "cloudflare"
+  ],
+  "data_science": [
+    "machine learning", "deep learning", "data science", "pandas", "numpy",
+    "tensorflow", "pytorch", "scikit-learn", "tableau", "power bi", "spark",
+    "jupyter", "anaconda", "matplotlib", "seaborn", "plotly", "d3.js"
+  ],
+  "market_research": [
+    "market research", "consumer research", "market analysis", "competitive analysis",
+    "brand research", "product research", "customer insights", "market segmentation",
+    "focus groups", "surveys", "questionnaire design", "sampling techniques",
+    "statistical analysis", "data collection", "field research", "desk research",
+    "primary research", "secondary research", "qualitative research", "quantitative research",
+    "conjoint analysis", "factor analysis", "regression analysis", "cluster analysis",
+    "consumer behavior", "market trends", "brand positioning", "pricing research",
+    "advertising research", "media research", "usability testing", "mystery shopping"
+  ],
+  "business_consulting": [
+    "business strategy", "strategic planning", "business analysis", "process improvement",
+    "change management", "organizational development", "business transformation",
+    "operational efficiency", "cost optimization", "revenue growth", "market entry",
+    "feasibility studies", "business case development", "stakeholder management",
+    "risk assessment", "performance measurement", "kpi development", "balanced scorecard",
+    "lean methodology", "six sigma", "business process reengineering", "digital transformation",
+    "innovation management", "competitive intelligence", "swot analysis", "pestle analysis",
+    "porter's five forces", "value chain analysis", "business model canvas"
+  ],
+  "training_development": [
+    "corporate training", "training design", "curriculum development", "instructional design",
+    "e-learning", "learning management systems", "training delivery", "adult learning",
+    "competency development", "skills assessment", "performance coaching", "mentoring",
+    "leadership development", "team building", "communication skills", "presentation skills",
+    "facilitation", "workshop design", "training evaluation", "learning analytics",
+    "blended learning", "microlearning", "gamification", "virtual training",
+    "train the trainer", "certification programs", "professional development"
+  ],
+  "research_tools": [
+    "spss", "sas", "stata", "r", "python", "nvivo", "maxqda", "atlas.ti",
+    "qualtrics", "surveymonkey", "google forms", "typeform", "mentimeter",
+    "zoom", "microsoft teams", "webex", "gotomeeting", "obs studio",
+    "camtasia", "articulate storyline", "adobe captivate", "miro", "mural",
+    "jamboard", "conceptboard", "lucidchart", "visio", "draw.io"
+  ],
+  "analytics_visualization": [
+    "tableau", "power bi", "qlikview", "qlik sense", "looker", "google analytics",
+    "google data studio", "excel", "advanced excel", "pivot tables", "macros",
+    "dashboard creation", "data visualization", "infographics", "storytelling with data",
+    "business intelligence", "reporting", "kpi dashboards", "executive dashboards",
+    "real-time analytics", "predictive analytics", "descriptive analytics"
+  ],
+  "project_management": [
+    "project management", "pmp", "prince2", "agile", "scrum", "kanban",
+    "waterfall", "risk management", "budget management", "timeline management",
+    "resource allocation", "stakeholder management", "quality management",
+    "procurement management", "communication management", "scope management",
+    "microsoft project", "jira", "trello", "asana", "monday.com", "basecamp",
+    "gantt charts", "critical path method", "earned value management"
+  ],
+  "soft_skills": [
+    "leadership", "communication", "teamwork", "problem solving", "analytical thinking",
+    "project management", "agile", "scrum", "critical thinking", "creativity",
+    "adaptability", "time management", "multitasking", "attention to detail",
+    "client management", "relationship building", "negotiation", "persuasion",
+    "emotional intelligence", "cultural sensitivity", "cross-cultural communication",
+    "public speaking", "presentation skills", "active listening", "empathy",
+    "conflict resolution", "decision making", "strategic thinking", "innovation",
+    "collaboration", "mentoring", "coaching", "facilitation", "networking"
+  ],
+  "industry_knowledge": [
+    "sme sector", "small medium enterprises", "non profit sector", "ngo management",
+    "corporate sector", "blue chip companies", "market dynamics", "business development",
+    "sales strategy", "marketing strategy", "digital marketing", "social media marketing",
+    "content marketing", "brand management", "customer relationship management",
+    "supply chain management", "operations management", "financial analysis",
+    "regulatory compliance", "quality assurance", "iso standards", "audit",
+    "pakistan market", "south asian market", "emerging markets", "international business"
+  ],
+  "communication_tools": [
+    "microsoft office", "word", "excel", "powerpoint", "outlook", "teams",
+    "google workspace", "google docs", "google sheets", "google slides", "gmail",
+    "slack", "zoom", "skype", "whatsapp business", "telegram", "discord",
+    "adobe creative suite", "photoshop", "illustrator", "indesign", "canva",
+    "figma", "sketch", "prezi", "keynote", "notion", "confluence", "sharepoint"
+  ],
+  "languages": [
+    "english", "urdu", "hindi", "arabic", "french", "german", "spanish",
+    "mandarin", "japanese", "korean", "turkish", "persian", "pashto",
+    "sindhi", "punjabi", "balochi", "multilingual", "translation", "interpretation"
+  ],
+  "certifications": [
+    "pmp", "prince2", "six sigma", "lean", "agile", "scrum master", "csm",
+    "google analytics", "google ads", "facebook ads", "hubspot", "salesforce",
+    "aws certified", "azure certified", "google cloud certified", "tableau certified",
+    "power bi certified", "microsoft certified", "cisco certified", "itil",
+    "cisa", "cism", "cissp", "phr", "shrm", "cpa", "acca", "cfa", "frm"
+  ]
+}
