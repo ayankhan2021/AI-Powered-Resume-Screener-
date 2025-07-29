@@ -10,10 +10,12 @@ from components.login import LoginPage
 from components.branding import FCGBranding
 from utils.helpers import SessionManager, FileValidator, ConfigManager, format_score_color
 
+favicon = "../assets/fcg_logo.png"
+
 # Page configuration
 st.set_page_config(
     page_title="FCG Resume Screener",
-    page_icon="🏢",
+    page_icon=favicon,
     layout="wide",
     initial_sidebar_state="expanded"
 )

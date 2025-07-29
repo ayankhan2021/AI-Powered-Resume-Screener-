@@ -1,116 +1,239 @@
 {
-  "programming_languages": [
-    "python", "java", "javascript", "c++", "c#", "php", "ruby", "swift", 
-    "kotlin", "scala", "go", "rust", "typescript", "r", "matlab", "perl",
-    "sas", "spss", "stata", "vba", "sql"
-  ],
-  "web_technologies": [
-    "html", "css", "react", "angular", "vue.js", "node.js", "express.js",
-    "django", "flask", "spring", "laravel", "bootstrap", "jquery", "sass",
-    "wordpress", "drupal", "joomla", "shopify", "magento"
-  ],
-  "databases": [
-    "mysql", "postgresql", "mongodb", "sqlite", "redis", "oracle", 
-    "cassandra", "elasticsearch", "dynamodb", "firebase", "ms sql server",
-    "access", "teradata", "snowflake", "bigquery"
-  ],
-  "cloud_platforms": [
-    "aws", "azure", "google cloud", "heroku", "digitalocean", "kubernetes",
-    "docker", "terraform", "jenkins", "gitlab ci", "github actions",
-    "vercel", "netlify", "cloudflare"
-  ],
-  "data_science": [
-    "machine learning", "deep learning", "data science", "pandas", "numpy",
-    "tensorflow", "pytorch", "scikit-learn", "tableau", "power bi", "spark",
-    "jupyter", "anaconda", "matplotlib", "seaborn", "plotly", "d3.js"
-  ],
-  "market_research": [
-    "market research", "consumer research", "market analysis", "competitive analysis",
-    "brand research", "product research", "customer insights", "market segmentation",
-    "focus groups", "surveys", "questionnaire design", "sampling techniques",
-    "statistical analysis", "data collection", "field research", "desk research",
-    "primary research", "secondary research", "qualitative research", "quantitative research",
-    "conjoint analysis", "factor analysis", "regression analysis", "cluster analysis",
-    "consumer behavior", "market trends", "brand positioning", "pricing research",
-    "advertising research", "media research", "usability testing", "mystery shopping"
-  ],
-  "business_consulting": [
-    "business strategy", "strategic planning", "business analysis", "process improvement",
-    "change management", "organizational development", "business transformation",
-    "operational efficiency", "cost optimization", "revenue growth", "market entry",
-    "feasibility studies", "business case development", "stakeholder management",
-    "risk assessment", "performance measurement", "kpi development", "balanced scorecard",
-    "lean methodology", "six sigma", "business process reengineering", "digital transformation",
-    "innovation management", "competitive intelligence", "swot analysis", "pestle analysis",
-    "porter's five forces", "value chain analysis", "business model canvas"
-  ],
-  "training_development": [
-    "corporate training", "training design", "curriculum development", "instructional design",
-    "e-learning", "learning management systems", "training delivery", "adult learning",
-    "competency development", "skills assessment", "performance coaching", "mentoring",
-    "leadership development", "team building", "communication skills", "presentation skills",
-    "facilitation", "workshop design", "training evaluation", "learning analytics",
-    "blended learning", "microlearning", "gamification", "virtual training",
-    "train the trainer", "certification programs", "professional development"
-  ],
-  "research_tools": [
-    "spss", "sas", "stata", "r", "python", "nvivo", "maxqda", "atlas.ti",
-    "qualtrics", "surveymonkey", "google forms", "typeform", "mentimeter",
-    "zoom", "microsoft teams", "webex", "gotomeeting", "obs studio",
-    "camtasia", "articulate storyline", "adobe captivate", "miro", "mural",
-    "jamboard", "conceptboard", "lucidchart", "visio", "draw.io"
-  ],
-  "analytics_visualization": [
-    "tableau", "power bi", "qlikview", "qlik sense", "looker", "google analytics",
-    "google data studio", "excel", "advanced excel", "pivot tables", "macros",
-    "dashboard creation", "data visualization", "infographics", "storytelling with data",
-    "business intelligence", "reporting", "kpi dashboards", "executive dashboards",
-    "real-time analytics", "predictive analytics", "descriptive analytics"
-  ],
-  "project_management": [
-    "project management", "pmp", "prince2", "agile", "scrum", "kanban",
-    "waterfall", "risk management", "budget management", "timeline management",
-    "resource allocation", "stakeholder management", "quality management",
-    "procurement management", "communication management", "scope management",
-    "microsoft project", "jira", "trello", "asana", "monday.com", "basecamp",
-    "gantt charts", "critical path method", "earned value management"
-  ],
-  "soft_skills": [
-    "leadership", "communication", "teamwork", "problem solving", "analytical thinking",
-    "project management", "agile", "scrum", "critical thinking", "creativity",
-    "adaptability", "time management", "multitasking", "attention to detail",
-    "client management", "relationship building", "negotiation", "persuasion",
-    "emotional intelligence", "cultural sensitivity", "cross-cultural communication",
-    "public speaking", "presentation skills", "active listening", "empathy",
-    "conflict resolution", "decision making", "strategic thinking", "innovation",
-    "collaboration", "mentoring", "coaching", "facilitation", "networking"
-  ],
-  "industry_knowledge": [
-    "sme sector", "small medium enterprises", "non profit sector", "ngo management",
-    "corporate sector", "blue chip companies", "market dynamics", "business development",
-    "sales strategy", "marketing strategy", "digital marketing", "social media marketing",
-    "content marketing", "brand management", "customer relationship management",
-    "supply chain management", "operations management", "financial analysis",
-    "regulatory compliance", "quality assurance", "iso standards", "audit",
-    "pakistan market", "south asian market", "emerging markets", "international business"
-  ],
-  "communication_tools": [
-    "microsoft office", "word", "excel", "powerpoint", "outlook", "teams",
-    "google workspace", "google docs", "google sheets", "google slides", "gmail",
-    "slack", "zoom", "skype", "whatsapp business", "telegram", "discord",
-    "adobe creative suite", "photoshop", "illustrator", "indesign", "canva",
-    "figma", "sketch", "prezi", "keynote", "notion", "confluence", "sharepoint"
-  ],
-  "languages": [
-    "english", "urdu", "hindi", "arabic", "french", "german", "spanish",
-    "mandarin", "japanese", "korean", "turkish", "persian", "pashto",
-    "sindhi", "punjabi", "balochi", "multilingual", "translation", "interpretation"
-  ],
-  "certifications": [
-    "pmp", "prince2", "six sigma", "lean", "agile", "scrum master", "csm",
-    "google analytics", "google ads", "facebook ads", "hubspot", "salesforce",
-    "aws certified", "azure certified", "google cloud certified", "tableau certified",
-    "power bi certified", "microsoft certified", "cisco certified", "itil",
-    "cisa", "cism", "cissp", "phr", "shrm", "cpa", "acca", "cfa", "frm"
-  ]
+  "programming_languages": {
+    "web_development": ["javascript", "typescript", "html", "css", "php", "ruby", "node.js", "dart", "elm", "clojurescript"],
+    "backend": ["python", "java", "c#", "c++", "go", "rust", "scala", "kotlin", "asp.net", "spring boot", "express.js"],
+    "mobile": ["swift", "objective-c", "dart", "flutter", "react native", "xamarin", "ionic", "cordova", "nativescript"],
+    "data_science": ["python", "r", "matlab", "julia", "sql", "sas", "spss", "stata", "scala", "f#"],
+    "systems": ["c", "c++", "assembly", "verilog", "vhdl", "embedded c", "arduino", "raspberry pi", "firmware"],
+    "scripting": ["bash", "powershell", "perl", "lua", "tcl", "awk", "sed", "batch", "shell scripting"],
+    "functional": ["haskell", "lisp", "clojure", "erlang", "elixir", "ocaml", "scheme"],
+    "emerging": ["solidity", "webassembly", "quantum computing", "blockchain development"]
+  },
+  "web_technologies": {
+    "frontend_frameworks": ["react", "angular", "vue.js", "svelte", "ember.js", "backbone.js", "alpine.js", "lit", "stencil"],
+    "backend_frameworks": ["django", "flask", "fastapi", "express.js", "spring", "laravel", "rails", "phoenix", "fiber"],
+    "css_frameworks": ["bootstrap", "tailwind css", "bulma", "foundation", "materialize", "semantic ui", "chakra ui"],
+    "build_tools": ["webpack", "gulp", "grunt", "parcel", "vite", "rollup", "esbuild", "snowpack", "turbopack"],
+    "cms": ["wordpress", "drupal", "joomla", "strapi", "contentful", "sanity", "ghost", "keystone"],
+    "e_commerce": ["shopify", "magento", "woocommerce", "prestashop", "opencart", "bigcommerce"],
+    "testing": ["jest", "cypress", "selenium", "playwright", "puppeteer", "storybook", "testing library"]
+  },
+  "databases": {
+    "relational": ["mysql", "postgresql", "sqlite", "oracle", "sql server", "mariadb", "db2", "sybase"],
+    "nosql": ["mongodb", "redis", "cassandra", "dynamodb", "couchdb", "firebase", "rethinkdb", "amazon documentdb"],
+    "graph": ["neo4j", "amazon neptune", "arangodb", "dgraph", "tigergraph", "orientdb"],
+    "time_series": ["influxdb", "timescaledb", "prometheus", "clickhouse", "questdb", "kdb+"],
+    "data_warehousing": ["snowflake", "redshift", "bigquery", "synapse", "teradata", "vertica", "greenplum"],
+    "search": ["elasticsearch", "solr", "algolia", "amazon cloudSearch", "swiftype"],
+    "in_memory": ["redis", "memcached", "hazelcast", "apache ignite", "sap hana"]
+  },
+  "cloud_platforms": {
+    "aws": ["ec2", "s3", "lambda", "rds", "cloudformation", "eks", "ecs", "sagemaker", "dynamodb", "cloudwatch"],
+    "azure": ["azure functions", "blob storage", "cosmos db", "aks", "azure ml", "power platform", "azure devops"],
+    "gcp": ["compute engine", "cloud storage", "bigquery", "gke", "cloud functions", "vertex ai", "firebase"],
+    "containerization": ["docker", "kubernetes", "helm", "istio", "openshift", "rancher", "podman"],
+    "devops": ["jenkins", "gitlab ci", "github actions", "travis ci", "circleci", "teamcity", "bamboo", "azure devops"],
+    "infrastructure": ["terraform", "ansible", "vagrant", "chef", "puppet", "cloudformation", "pulumi"],
+    "monitoring": ["prometheus", "grafana", "datadog", "new relic", "splunk", "elk stack", "jaeger"]
+  },
+  "culinary_skills": {
+    "cooking_techniques": ["grilling", "roasting", "sautéing", "braising", "poaching", "frying", "steaming", "baking", "broiling", "smoking", "sous vide", "confit", "flambé", "tempering", "reduction"],
+    "cuisine_types": ["italian", "french", "asian", "mexican", "mediterranean", "american", "indian", "thai", "chinese", "japanese", "korean", "middle eastern", "fusion", "molecular gastronomy", "nouvelle cuisine"],
+    "food_preparation": ["knife skills", "food prep", "mise en place", "plating", "garnishing", "portioning", "butchery", "filleting", "vegetable carving", "food styling", "presentation"],
+    "kitchen_management": ["inventory management", "cost control", "menu planning", "kitchen safety", "sanitation", "haccp", "food ordering", "staff scheduling", "quality control", "waste reduction"],
+    "specialized_skills": ["pastry arts", "bread making", "wine pairing", "molecular gastronomy", "farm to table", "organic cooking", "dietary restrictions", "allergen management", "food photography"],
+    "baking_pastry": ["bread making", "cake decorating", "pastry arts", "chocolate work", "sugar work", "lamination", "fermentation", "artisan breads", "dessert plating"],
+    "beverage": ["coffee preparation", "tea blending", "cocktail mixing", "wine service", "beer knowledge", "spirits knowledge", "barista skills", "latte art", "mixology"],
+    "dietary_specializations": ["vegan cooking", "vegetarian", "gluten-free", "keto", "paleo", "diabetic-friendly", "halal", "kosher", "raw food", "whole30"],
+    "food_safety": ["servsafe", "food handling", "temperature control", "cross contamination prevention", "cleaning protocols", "storage procedures"]
+  },
+  "healthcare_skills": {
+    "clinical": ["patient care", "vital signs", "medication administration", "wound care", "iv therapy", "injections", "blood draws", "catheter care", "ostomy care"],
+    "diagnostic": ["x-ray", "mri", "ct scan", "ultrasound", "blood work", "ecg", "ekg", "spirometry", "mammography", "fluoroscopy"],
+    "specialties": ["emergency medicine", "pediatrics", "cardiology", "oncology", "surgery", "anesthesia", "psychiatry", "dermatology", "neurology", "orthopedics"],
+    "certifications": ["cpr", "bls", "acls", "pals", "cna", "rn", "lpn", "nrp", "tncc", "nihss", "enpc"],
+    "nursing": ["bedside manner", "patient assessment", "care planning", "documentation", "family education", "discharge planning", "medication reconciliation"],
+    "medical_admin": ["medical coding", "icd-10", "cpt codes", "insurance verification", "emr systems", "epic", "cerner", "allscripts", "athenahealth"],
+    "laboratory": ["phlebotomy", "lab testing", "specimen collection", "microscopy", "blood bank", "microbiology", "hematology", "chemistry"],
+    "therapy": ["physical therapy", "occupational therapy", "speech therapy", "respiratory therapy", "massage therapy", "radiation therapy"],
+    "mental_health": ["counseling", "therapy", "crisis intervention", "substance abuse", "behavioral health", "trauma informed care"]
+  },
+  "creative_arts": {
+    "music": ["singing", "vocal performance", "music theory", "composition", "live performance", "stage presence", "pitch control", "rhythm", "harmony"],
+    "performance": ["stage presence", "audience engagement", "entertainment", "acting", "dancing", "comedy", "storytelling", "improvisation", "theater"],
+    "production": ["studio recording", "audio production", "mixing", "mastering", "sound engineering", "music production", "beat making", "sampling"],
+    "instruments": ["guitar", "piano", "drums", "violin", "saxophone", "bass", "keyboard", "flute", "trumpet", "clarinet", "cello", "harp"],
+    "genres": ["pop", "rock", "jazz", "classical", "country", "r&b", "hip hop", "folk", "blues", "electronic", "reggae", "latin"],
+    "visual_arts": ["painting", "drawing", "sculpture", "photography", "graphic design", "illustration", "digital art", "printmaking", "ceramics"],
+    "design": ["ui/ux design", "web design", "logo design", "branding", "typography", "color theory", "adobe creative suite", "figma", "sketch"],
+    "video": ["video editing", "cinematography", "animation", "motion graphics", "after effects", "premiere pro", "final cut pro", "davinci resolve"],
+    "writing": ["creative writing", "copywriting", "content writing", "screenwriting", "journalism", "blogging", "technical writing", "editing"]
+  },
+  "business_finance": {
+    "accounting": ["bookkeeping", "financial statements", "tax preparation", "auditing", "accounts payable", "accounts receivable", "payroll", "cost accounting"],
+    "analysis": ["financial analysis", "budget planning", "forecasting", "cost analysis", "roi analysis", "variance analysis", "ratio analysis", "valuation"],
+    "tools": ["excel", "quickbooks", "sap", "oracle", "bloomberg", "sage", "xero", "freshbooks", "peachtree", "netsuite"],
+    "certifications": ["cpa", "cfa", "frm", "cma", "cia", "acca", "ca", "cga", "cea", "cfp"],
+    "banking": ["commercial banking", "investment banking", "retail banking", "credit analysis", "loan processing", "risk management", "compliance"],
+    "insurance": ["underwriting", "claims processing", "actuarial analysis", "risk assessment", "policy administration", "reinsurance"],
+    "investments": ["portfolio management", "equity research", "fixed income", "derivatives", "asset management", "wealth management", "trading"],
+    "corporate_finance": ["capital budgeting", "mergers acquisitions", "ipo", "debt financing", "equity financing", "financial modeling"],
+    "taxation": ["income tax", "corporate tax", "sales tax", "international tax", "tax planning", "tax compliance", "transfer pricing"]
+  },
+  "sales_marketing": {
+    "sales": ["lead generation", "cold calling", "client relationships", "closing deals", "crm", "b2b sales", "b2c sales", "inside sales", "field sales"],
+    "digital_marketing": ["seo", "sem", "social media marketing", "content marketing", "email marketing", "ppc", "google ads", "facebook ads", "instagram marketing"],
+    "traditional_marketing": ["print advertising", "radio", "tv", "outdoor advertising", "events", "trade shows", "direct mail", "telemarketing"],
+    "analytics": ["google analytics", "facebook insights", "conversion tracking", "a/b testing", "marketing automation", "customer analytics"],
+    "brand_management": ["brand strategy", "brand positioning", "brand awareness", "brand equity", "corporate identity", "brand guidelines"],
+    "public_relations": ["media relations", "press releases", "crisis communication", "event planning", "corporate communications", "influencer relations"],
+    "e_commerce": ["shopify", "magento", "woocommerce", "amazon fba", "dropshipping", "marketplace management", "conversion optimization"],
+    "content_creation": ["copywriting", "content strategy", "blog writing", "video content", "podcast production", "infographics"],
+    "marketing_automation": ["hubspot", "marketo", "pardot", "mailchimp", "constant contact", "klaviyo", "drip campaigns"]
+  },
+  "education_skills": {
+    "teaching": ["lesson planning", "curriculum development", "classroom management", "assessment", "differentiated instruction", "inclusive education"],
+    "training": ["corporate training", "skill development", "workshop facilitation", "e-learning", "instructional design", "adult learning"],
+    "specialties": ["special education", "esl", "stem education", "arts education", "adult education", "early childhood", "gifted education"],
+    "technology": ["learning management systems", "educational technology", "online teaching", "virtual classrooms", "blended learning"],
+    "administration": ["school administration", "educational leadership", "policy development", "budget management", "strategic planning"],
+    "counseling": ["academic counseling", "career guidance", "student support", "behavioral intervention", "crisis counseling"],
+    "assessment": ["standardized testing", "formative assessment", "summative assessment", "rubric development", "data analysis"]
+  },
+  "manufacturing_engineering": {
+    "mechanical": ["mechanical engineering", "cad design", "autocad", "solidworks", "manufacturing processes", "quality control", "thermodynamics"],
+    "electrical": ["electrical engineering", "circuit design", "plc programming", "automation", "control systems", "power systems"],
+    "industrial": ["industrial engineering", "process optimization", "lean manufacturing", "six sigma", "operations research", "ergonomics"],
+    "civil": ["civil engineering", "structural design", "construction management", "project planning", "surveying", "geotechnical"],
+    "chemical": ["chemical engineering", "process engineering", "chemical processes", "safety protocols", "process design"],
+    "production": ["production planning", "inventory management", "supply chain", "logistics", "warehouse management", "demand planning"],
+    "quality": ["quality assurance", "iso standards", "statistical process control", "inspection", "testing", "continuous improvement"],
+    "materials": ["materials science", "metallurgy", "composites", "polymers", "ceramics", "material testing"],
+    "aerospace": ["aeronautical engineering", "avionics", "flight dynamics", "propulsion", "aircraft design", "space systems"]
+  },
+  "legal_skills": {
+    "practice_areas": ["corporate law", "criminal law", "family law", "real estate law", "intellectual property", "employment law", "tax law", "immigration law"],
+    "litigation": ["trial advocacy", "legal research", "brief writing", "depositions", "negotiations", "mediation", "arbitration"],
+    "compliance": ["regulatory compliance", "risk management", "policy development", "audit", "governance", "ethics"],
+    "documentation": ["contract drafting", "legal writing", "case management", "document review", "due diligence"],
+    "paralegal": ["legal assistant", "case preparation", "client communication", "filing", "research support", "discovery"],
+    "international": ["international law", "cross border transactions", "trade law", "treaty negotiation", "diplomatic relations"]
+  },
+  "transportation_logistics": {
+    "driving": ["commercial driving", "cdl", "truck driving", "delivery services", "route planning", "vehicle maintenance", "defensive driving"],
+    "logistics": ["supply chain management", "inventory control", "warehouse operations", "shipping", "receiving", "3pl management"],
+    "aviation": ["pilot license", "air traffic control", "aircraft maintenance", "flight operations", "aviation safety", "navigation"],
+    "maritime": ["ship operations", "navigation", "marine engineering", "port operations", "maritime safety", "cargo handling"],
+    "public_transport": ["bus driving", "train operations", "transit planning", "passenger service", "schedule management"],
+    "freight": ["freight forwarding", "customs clearance", "international shipping", "cargo documentation", "hazmat handling"]
+  },
+  "agriculture_environment": {
+    "farming": ["crop management", "livestock care", "irrigation", "pest control", "organic farming", "sustainable agriculture", "soil management"],
+    "environmental": ["environmental science", "conservation", "sustainability", "waste management", "renewable energy", "climate change"],
+    "forestry": ["forest management", "timber harvesting", "wildlife conservation", "fire prevention", "reforestation"],
+    "veterinary": ["animal care", "veterinary medicine", "animal behavior", "pet grooming", "animal training", "livestock health"],
+    "horticulture": ["plant cultivation", "landscape design", "greenhouse management", "nursery operations", "garden design"]
+  },
+  "security_safety": {
+    "security": ["physical security", "cybersecurity", "surveillance", "access control", "security protocols", "risk assessment", "threat analysis"],
+    "law_enforcement": ["police work", "criminal investigation", "forensics", "emergency response", "public safety", "crime prevention"],
+    "fire_safety": ["firefighting", "fire prevention", "emergency medical services", "hazmat response", "rescue operations", "arson investigation"],
+    "occupational_safety": ["workplace safety", "osha compliance", "safety training", "accident investigation", "safety audits", "ppe"],
+    "cybersecurity": ["network security", "information security", "penetration testing", "vulnerability assessment", "incident response", "security auditing"]
+  },
+  "real_estate_construction": {
+    "real_estate": ["property management", "real estate sales", "property valuation", "leasing", "real estate investment", "market analysis"],
+    "construction": ["construction management", "carpentry", "plumbing", "electrical work", "masonry", "roofing", "concrete work"],
+    "architecture": ["architectural design", "building codes", "construction drawings", "project management", "3d modeling"],
+    "trades": ["welding", "painting", "flooring", "hvac", "landscaping", "demolition", "drywall", "tile work"],
+    "project_management": ["scheduling", "cost estimation", "resource planning", "safety management", "quality control"]
+  },
+  "hospitality_tourism": {
+    "hotel_management": ["front desk operations", "housekeeping", "concierge services", "revenue management", "guest relations", "property management"],
+    "food_service": ["restaurant management", "catering", "banquet services", "menu planning", "cost control", "inventory management"],
+    "tourism": ["tour guide", "travel planning", "destination management", "cultural interpretation", "language skills", "customer service"],
+    "event_planning": ["event coordination", "wedding planning", "corporate events", "vendor management", "budget planning", "logistics"],
+    "hospitality_tech": ["property management systems", "revenue management systems", "point of sale", "booking engines"]
+  },
+  "sports_recreation": {
+    "coaching": ["sports coaching", "athletic training", "fitness instruction", "team management", "player development", "sports psychology"],
+    "fitness": ["personal training", "group fitness", "yoga instruction", "nutrition counseling", "exercise physiology", "strength training"],
+    "sports_specific": ["football", "basketball", "soccer", "tennis", "swimming", "track and field", "martial arts", "golf", "baseball"],
+    "recreation": ["camp counseling", "outdoor recreation", "adventure sports", "community recreation", "aquatics", "therapeutic recreation"],
+    "sports_medicine": ["athletic training", "sports rehabilitation", "injury prevention", "kinesiology", "biomechanics"]
+  },
+  "retail_customer_service": {
+    "retail": ["retail sales", "merchandising", "inventory management", "pos systems", "visual merchandising", "loss prevention"],
+    "customer_service": ["call center", "customer support", "complaint resolution", "phone etiquette", "chat support", "help desk"],
+    "cashier": ["cash handling", "payment processing", "register operations", "money counting", "transaction processing", "pos systems"],
+    "e_commerce": ["online retail", "order fulfillment", "returns processing", "customer reviews", "marketplace management"]
+  },
+  "human_resources": {
+    "recruiting": ["talent acquisition", "interviewing", "candidate screening", "job posting", "background checks", "onboarding"],
+    "hr_operations": ["payroll", "benefits administration", "employee relations", "policy development", "compliance", "hris"],
+    "training": ["employee training", "onboarding", "performance management", "career development", "succession planning", "leadership development"],
+    "compensation": ["compensation analysis", "salary surveys", "job evaluation", "incentive programs", "equity administration"],
+    "hr_analytics": ["people analytics", "workforce planning", "turnover analysis", "engagement surveys", "hr metrics"]
+  },
+  "data_science": {
+    "machine_learning": ["scikit-learn", "tensorflow", "pytorch", "keras", "xgboost", "neural networks", "deep learning", "reinforcement learning"],
+    "data_analysis": ["pandas", "numpy", "scipy", "matplotlib", "seaborn", "statistical analysis", "hypothesis testing", "regression"],
+    "visualization": ["tableau", "power bi", "d3.js", "plotly", "ggplot2", "qlik", "looker", "bokeh"],
+    "big_data": ["hadoop", "spark", "kafka", "airflow", "databricks", "hive", "pig", "storm"],
+    "statistics": ["regression", "classification", "clustering", "time series", "bayesian analysis", "experimental design", "anova"],
+    "business_intelligence": ["data warehousing", "etl", "reporting", "dashboards", "kpi development", "olap"],
+    "ai_ml_ops": ["mlflow", "kubeflow", "model deployment", "model monitoring", "feature stores", "data pipelines"]
+  },
+  "market_research": {
+    "quantitative": ["statistical analysis", "survey design", "a/b testing", "regression analysis", "conjoint analysis", "factor analysis"],
+    "qualitative": ["ethnographic research", "user research", "behavioral analysis", "focus groups", "interviews", "observation"],
+    "tools": ["qualtrics", "surveymonkey", "usertesting", "hotjar", "spss", "sas", "stata", "r", "python"],
+    "methodologies": ["market segmentation", "brand tracking", "customer satisfaction", "pricing research", "concept testing", "usage studies"],
+    "digital_research": ["social media monitoring", "web analytics", "seo research", "competitive intelligence", "online communities"],
+    "consumer_insights": ["consumer behavior", "purchase intent", "brand perception", "customer journey mapping", "persona development"]
+  },
+  "business_consulting": {
+    "strategy": ["business strategy", "strategic planning", "competitive analysis", "market entry", "growth strategy", "digital strategy"],
+    "operations": ["process improvement", "change management", "lean six sigma", "kaizen", "business process reengineering", "automation"],
+    "management": ["project management", "stakeholder management", "business analysis", "requirements gathering", "program management"],
+    "frameworks": ["mckinsey", "bcg", "swot analysis", "porter's five forces", "value chain analysis", "balanced scorecard"],
+    "digital_transformation": ["technology implementation", "digital strategy", "automation", "workflow optimization", "cloud migration"],
+    "organizational": ["organizational design", "culture change", "leadership development", "team effectiveness", "performance management"]
+  },
+  "soft_skills": {
+    "leadership": ["leadership", "team management", "mentoring", "coaching", "delegation", "vision setting", "inspirational leadership"],
+    "communication": ["communication", "presentation", "public speaking", "writing", "negotiation", "active listening", "cross-cultural communication"],
+    "analytical": ["problem solving", "analytical thinking", "critical thinking", "decision making", "research skills", "systems thinking"],
+    "interpersonal": ["teamwork", "collaboration", "empathy", "emotional intelligence", "cultural sensitivity", "relationship building"],
+    "adaptability": ["flexibility", "adaptability", "learning agility", "innovation", "change management", "resilience"],
+    "time_management": ["prioritization", "multitasking", "deadline management", "efficiency", "productivity", "organization"],
+    "creativity": ["creative thinking", "innovation", "brainstorming", "design thinking", "artistic vision", "ideation"]
+  },
+  "languages": {
+    "english": ["english", "business english", "technical writing", "academic english", "conversational english", "english literature"],
+    "european": ["spanish", "french", "german", "italian", "portuguese", "dutch", "swedish", "norwegian", "danish", "finnish"],
+    "asian": ["mandarin", "japanese", "korean", "hindi", "arabic", "thai", "vietnamese", "tagalog", "indonesian", "malay"],
+    "south_asian": ["urdu", "hindi", "bengali", "punjabi", "tamil", "gujarati", "marathi", "telugu", "kannada", "malayalam"],
+    "middle_eastern": ["arabic", "persian", "turkish", "hebrew", "kurdish", "armenian"],
+    "african": ["swahili", "afrikaans", "amharic", "yoruba", "zulu", "xhosa", "igbo", "hausa"],
+    "programming": ["python", "java", "javascript", "c++", "sql", "html", "css", "php", "ruby"]
+  },
+  "certifications": {
+    "it": ["cissp", "cisa", "cism", "comptia a+", "comptia security+", "cisco ccna", "microsoft azure", "aws certified", "google cloud"],
+    "project_management": ["pmp", "prince2", "agile", "scrum master", "csm", "safe", "itil", "capm"],
+    "finance": ["cpa", "cfa", "frm", "cma", "cia", "acca", "ca", "cfp", "caia"],
+    "marketing": ["google ads", "facebook blueprint", "hubspot", "salesforce", "marketo", "google analytics"],
+    "quality": ["six sigma black belt", "lean", "iso 9001", "cmmi", "cobit", "prince2"],
+    "healthcare": ["cpr", "bls", "acls", "pals", "tncc", "ccrn", "rn", "lpn", "cna"],
+    "real_estate": ["real estate license", "property management", "appraisal certification", "nar certification"],
+    "legal": ["bar admission", "paralegal certification", "notary public", "cipp", "cipp/us"],
+    "design": ["adobe certified expert", "google ux design", "interaction design foundation", "certified usability analyst"]
+  },
+  "industry_specific": {
+    "pakistan_context": ["sme sector knowledge", "non profit management", "ngo operations", "pakistan market dynamics", "regulatory compliance pakistan"],
+    "international": ["cross cultural competency", "global business", "international trade", "export import", "cultural sensitivity"],
+    "emerging_tech": ["artificial intelligence", "blockchain", "iot", "virtual reality", "augmented reality", "quantum computing"],
+    "sustainability": ["esg", "carbon footprint", "renewable energy", "sustainable development", "circular economy", "green finance"],
+    "remote_work": ["remote collaboration", "virtual team management", "digital nomad", "asynchronous communication", "time zone management"]
+  }
 }

@@ -154,7 +154,7 @@ class FCGBranding:
             border-radius: 5px;
             border-left: 4px solid {colors['primary']};
             margin: 1rem 0;
-            color: black;
+            color: white;
         }}
         
         .footer-info {{
